@@ -9,8 +9,10 @@ def main(s,n,k):
         str: answer
     """
     a=len(s)
-    if   n>=0 and n<=a and n<k:
+    if   n>=0 and n<=a and n<k and k<=a:
         return s[n:k]
-    if n==k and n>=0 and n<=a:
-        return s[n]
-print(main("codeschooluz",2,5))       
+    if n==k:
+        return s[n] or s[k]
+    
+print(main("codeschooluz",2,155))
+      
