@@ -12,5 +12,5 @@ def main(s,n,k):
     if n<k or n>k:
         return s[n:k]
     if n==k:
-        return s[n] or s[k]
-print(main("codeschooluz",2,7))
+        return s[n or k] 
+print(main("codeschooluz",2,-6))
