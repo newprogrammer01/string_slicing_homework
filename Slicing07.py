@@ -7,5 +7,5 @@ def main(s,n):
     Returns:
         str: answer
     """
-    return s[:n]
-print(main("python",5))
+    return s[:-n]
+print(main("python",3))
