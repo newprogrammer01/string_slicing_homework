@@ -8,9 +8,8 @@ def main(s,n,k):
     Returns:
         str: answer
     """
-   
-    if n<k or n>k:
-        return s[n:k]
+    if n<k:
+      return s[n:k]
     if n==k:
-        return s[n or k] 
-print(main("codeschooluz",2,-6))
+        return s[n]
+print(main("apple",2,2))
