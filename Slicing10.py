@@ -15,4 +15,6 @@ def main(s,n,k):
         return "False"
 print(main("codeschooluz",2,5))
 
+
+
       
