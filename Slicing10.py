@@ -8,10 +8,9 @@ def main(s,n,k):
     Returns:
         str: answer
     """
-    a=len(s)
-    c=a//2
+   
     if n<k:
         return s[n:k]
     if n==k:
-        return s[c]
-print(main("apple",2,4))
+        return s[n]
+print(main("codeschooluz",2,5))
