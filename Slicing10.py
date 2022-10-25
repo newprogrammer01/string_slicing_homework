@@ -9,11 +9,9 @@ def main(s,n,k):
         str: answer
     """
     a=len(s)
-    b=a%2
     c=a//2
-    if b==1:
-        return s[c]
-    if b==0:
+    if n<k:
         return s[n:k]
-    
-print(main("codeschooluz",2,2))
+    if n==k:
+        return s[c]
+print(main("apple",2,4))
