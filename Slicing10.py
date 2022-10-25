@@ -8,10 +8,10 @@ def main(s,n,k):
     Returns:
         str: answer
     """
-    if k>n and k>0 and n>0:
+    if k>n and n>0:
       return s[n:k]
-    if n==k and k>0 and n>0:
+    if n==k and  n>0:
         return s[n]
     if n>k:
-        return False
+        return ''
 print(main("codeschooluz",2,-5))
