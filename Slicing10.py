@@ -10,10 +10,10 @@ def main(s,n,k):
     """
     a=len(s)
     if a>=n and a>=k and n<=k:
-        return s[n:k] or s[n]
+        return s[n:k] or s[n] or s[k]
     else:
         return "False"
-print(main("codeschooluz",2,5))
+print(main("apple",2,2))
 
 
 
