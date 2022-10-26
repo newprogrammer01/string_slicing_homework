@@ -12,6 +12,8 @@ def main(s,n,k):
     answer=s[n:k] or s[n] or s[k]
     if a>=n and a>=k and n<=k:
         return answer
+    else:
+        return False
 print(main("apple",2,2))
 
 
