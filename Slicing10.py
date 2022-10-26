@@ -10,11 +10,11 @@ def main(s,n,k):
     """
     a=len(s)
     answer=s[n:k] or s[n] or s[k]
-    if a>=n and a>=k and n<=k:
+    if a>n and  a!=n and a>=k and n<=k:
         return answer
     else:
         return ''
-print(main("apple",2,3))
+print(main("apple",4,5))
 
 
 
