@@ -9,10 +9,9 @@ def main(s,n,k):
         str: answer
     """
     a=len(s)
+    answer=s[n:k] or s[n] or s[k]
     if a>=n and a>=k and n<=k:
-        return s[n:k] or s[n] or s[k]
-    else:
-        return "False"
+        return answer
 print(main("apple",2,2))
 
 
