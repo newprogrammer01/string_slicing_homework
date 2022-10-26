@@ -9,12 +9,14 @@ def main(s,n,k):
         str: answer
     """
     a=len(s)
-    answer=s[n:k] or s[n] or s[k]
-    if a>n and  a!=n and a>=k and n<=k:
+    answer=s[n:k] 
+    if a>n and  a!=n and a>k and n<k:
         return answer
+    if a>n and a!=n and a>k and n==k:
+        return s[n] or s[k]
     else:
         return ''
-print(main("apple",4,5))
+print(main("apple",2,2))
 
 
 
