@@ -13,8 +13,8 @@ def main(s,n,k):
     if a>=n and a>=k and n<=k:
         return answer
     else:
-        return "False"
-print(main("apple",2,2))
+        return ''
+print(main("apple",2,3))
 
 
 
