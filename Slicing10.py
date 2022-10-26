@@ -8,15 +8,8 @@ def main(s,n,k):
     Returns:
         str: answer
     """
-    a=len(s)
-    answer=s[n:k] 
-    if a>n and  a!=n and a>k and n<k:
-        return answer
-    if a>n and a!=n and a>k and n==k:
-        return s[n] or s[k]
-    else:
-        return ''
-print(main("apple",2,2))
+    return s[n:k]
+print(main("apple",2,5))
 
 
 
